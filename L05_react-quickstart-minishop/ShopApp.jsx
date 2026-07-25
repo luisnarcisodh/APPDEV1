@@ -22,6 +22,8 @@ function ProductCard({ product, onAddToCart }) {
 
       {product.popular && <span>⭐ Popular</span>}
 
+      <br />
+
       <button onClick={onAddToCart}>Add to Cart</button>
     </div>
   );
@@ -34,6 +36,10 @@ export default function ShopApp() {
     setCartCount((count) => count + 1);
   }
 
+  function handleRemoveOne() {
+    setCartCount((count) => Math.max(0, count - 1));
+  }
+
   return (
     <div className="shop">
       <h1>Mini Fruit & Veg Stand</h1>
@@ -42,6 +48,13 @@ export default function ShopApp() {
         {cartCount === 0
           ? "Cart is empty"
           : `${cartCount} ${cartCount === 1 ? "item" : "items"} in cart`}
+
+        <button
+          onClick={handleRemoveOne}
+          style={{ marginLeft: "10px" }}
+        >
+          Remove one
+        </button>
       </p>
 
       <div className="product-list">
