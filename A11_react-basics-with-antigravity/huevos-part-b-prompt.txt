@@ -1,0 +1,1 @@
+Analyze the styling in `@[src/App.css]` and `@[src/components/tracks/SongList.css]`, then add a glassmorphism effect, replace the icons with `react-icons`, and improve the fonts to make them feel more Apple-like.
