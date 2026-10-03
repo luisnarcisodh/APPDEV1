@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kape System - Coffee Shop DOM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      transition: background-color 0.4s ease;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #promoMessage {
+      margin-top: 25px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Kape System</h1>
+  <button id="themeBtn">Switch Coffee Shop Theme</button>
+  <p id="promoMessage">New promo will be revealed in 2 seconds...</p>
+
+  <script>
+    // 1. Access elements using document.getElementById()
+    const themeBtn = document.getElementById("themeBtn");
+    const promoMessage = document.getElementById("promoMessage");
+
+    // 2. Use addEventListener() and prompt() to change background color on click
+    themeBtn.addEventListener("click", () => {
+      const color = prompt("What theme color do you prefer for the POS?");
+      if (color) {
+        document.body.style.backgroundColor = color;
+      }
+    });
+
+    // 3. Use setTimeout() to automatically change promo message after 2 seconds
+    setTimeout(() => {
+      promoMessage.textContent = "Flash Sale: 50% off on all Pastries!";
+    }, 2000);
+  </script>
+</body>
+</html>
