@@ -99,6 +99,11 @@
     font-weight: 700;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.form button:hover {
+    background: #456fd0;
 }
 
 .signup {
@@ -112,4 +117,42 @@
     color: #5b86e5;
     font-weight: 700;
     text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Responsive layout ---------- */
+@media (max-width: 768px) {
+    .login {
+        width: 94vw;
+        height: auto;
+        min-height: 90vh;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        padding: 40px 24px;
+    }
+
+    .tagline {
+        font-size: 26px;
+    }
+
+    .logo {
+        height: 180px;
+        max-width: 80%;
+        margin: 32px 0;
+    }
+
+    .right {
+        padding: 48px 24px;
+        border-radius: 40px 40px 0 0;
+    }
+
+    .form h2 {
+        margin-bottom: 48px;
+    }
 }
