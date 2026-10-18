@@ -9,6 +9,10 @@
     --color-text-light: #ffffff;
     --color-placeholder: #9a9a9a;
     --color-border: #333333;
+    --color-border-light: #cccccc;
+    --color-muted: #888888;
+    --color-signup-border: #168eea;
+    --color-social-hover: #f1f5ff;
 
     /* ---------- Font Families ---------- */
     --font-primary: 'Poppins', sans-serif;
@@ -36,6 +40,7 @@
     --spacing-2xl: 60px;
 
     /* ---------- Border Radius ---------- */
+    --radius-xs: 5px;
     --radius-small: 8px;
     --radius-medium: 16px;
     --radius-large: 40px;
