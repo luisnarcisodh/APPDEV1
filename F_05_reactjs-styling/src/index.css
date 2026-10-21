@@ -1,0 +1,40 @@
+/* --- DESIGN TOKENS --- */
+:root {
+  /* Colors */
+  --color-primary: #587585; 
+  --color-text-dark: #587585;
+  --color-text-light: #A0AEC0;
+  --color-border: #CBD5E0;
+  --color-bg-main: #F7FAFC;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Border Radius */
+  --radius-card: 20px;
+  --radius-img: 20px;
+}
+
+/* --- GLOBAL CSS --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--color-text-dark);
+}
